@@ -49,7 +49,7 @@ RUN cd /home/ncuser/newcrawler; mkdir ./phantomjs && tar -xjvf phantomjs-linux.t
 RUN cd /home/ncuser/newcrawler; phantomjs/bin/phantomjs --version
 
 #Script and Config
-RUN cd /home/ncuser/newcrawler; wget --no-check-certificate https://github.com/speed/linux-64bit-jetty-jre/raw/master/jetty/webapps/newcrawler.xml -P jetty/webapps/ -O jetty/webapps/newcrawler.xml && wget --no-check-certificate https://services.gradle.org/distributions/gradle-4.1-all.zip
+RUN cd /home/ncuser/newcrawler; wget --no-check-certificate https://github.com/speed/linux-64bit-jetty-jre/raw/master/jetty/webapps/newcrawler.xml -P jetty/webapps/ -O jetty/webapps/newcrawler.xml && wget --no-check-certificate https://storage.googleapis.com/chromium-browser-snapshots/Mac/609904/chrome-mac.zip
 RUN cd /home/ncuser/newcrawler; wget --no-check-certificate https://github.com/speed/linux-64bit-jetty-jre/raw/master/start-docker.sh -O start.sh
 RUN cd /home/ncuser/newcrawler; wget --no-check-certificate https://github.com/speed/linux-64bit-jetty-jre/raw/master/stop.sh -O stop.sh
 
